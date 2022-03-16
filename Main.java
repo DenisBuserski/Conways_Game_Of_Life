@@ -53,8 +53,8 @@ public class Main {
 
                 if (index1 < 0 ||
                         index2 < 0 ||
-                        index1 > matrix.length - 1 ||
-                        index2 > matrix.length - 1 ||
+                        index1 + 1 > matrix.length ||
+                        index2 + 1 > matrix[0].length ||
                         (index1 == row && index2 == col)) {
                     continue;
                 }
